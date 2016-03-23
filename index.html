@@ -1,7 +1,104 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Florian Weber</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+
+<input type="checkbox" id="sidebartoggler" name="" value="">
+
+<div class="page-wrap">
+  
+  <label for="sidebartoggler" class="toggle">☰</label>
+  
+  <div class="page-content">
+  
+   <div class="container">
+      
+      <h2>Project</h2>
+      
+      
+      <div class="column">
+
+        <h3>Produktion Heute:</h3>
+        <ul>
+          <li>Firma definiert festen Produktionsablauf</li>
+          <li>Geräte werden von einem Drittanbieter eingekauft und eingestellt</li>
+          <li>Maschienen können nur das wofür sie programmiert wurden per SPS</li>
+          <li>Bei Fehlern oder Erweiterungen muss Dritthersteller angefragt werden</li>
+          <li>Erst einbauen oder ersetzen von teilen kann sehr lange dauern</li>
+        </ul>
+        <h3>Produktion Zukunft:</h3>
+        <ul>
+          <li>Industrie 4.0</li>
+          <li>Anstatt die Geräte als Blackbox zubekommen, haben sie fertige Interfaces</li>
+          <li>Interne Programmierer können eigene Firmensoftware schreiben</li>
+          <li>Geräte sind Individuel anpassbar, wenn standart funktionen nicht reichen</li>
+          <li>Komplizierte MES System wird durch mehrere kleinere Service ersetzt</li>
+          <li>Ein solchen Service ist meine Bachelorarbeit</li>
+        </ul>
+
+       <h3>Was ist ein SmartObjekt</h3>
+        <ul>
+          <li>Es gibt eine Hardware wie zum Beispiel ein Roboterarm</li>
+          <li>Dieser hat mehrere Motoren um ihn in verschiedene Richtungen zubewegen</li>
+          <li>Durch zum Beispiel einer Websocket verbindung zu einem RestService ansprechbar</li>
+          <li>Hat verschiedene Prozessabläufe vordefiniert</li>
+          <li>Kann nun anhand eines selbstgeschrieben Services der die RestSchnittstelle benutzt neue Prozessabläufe annehmen</li>
+          <li>######Zukunft: hat eine Selfdescription######</li>
+        </ul>
+        <h3>Was ist ein Framework Service</h3>
+        <ul>
+          <li>Reine Software, welche zum Beispiel Produktionsaufträge annimmt.</li>
+          <li>Nach dem es einen Auftrag bekommen hat erstellt es einen Workflow</li>
+          <li>Erst jetzt wird entschieden welche SmartObjects für den Prozess genommen werden</li>
+          <li>Startet nicht nur den Ablauf, sondern hat auch ständigen Feedback(Manager Position)</li>
+          <li>In diesem Fall sogar eine GUI und der Kontakt zum Benutzer</li>
+        </ul>
+
+
+      </div>
+      <div class="column">
+      
+        <h3>Wie sieht das Projekt jetzt aus:</h3>
+        <ul>
+          <li>Wir haben 3 Geräte; 3D Drucker; Carrier; Automatisierung</li>
+          <li>Jedes dieser Objekte ist ein SmartObject</li>
+          <li>MSB zur Kommunikation der Objekte miteiander</li>
+          <li>Bachelor Arbeit soll letzten Teil Füllen:</li>
+          <li>FrameworkService der die Geräte Managed</li>
+        </ul>
+        <h3>Arbeit in den letzten 5 Monaten:</h3>
+        <ul>
+          <li>HIWI Job seid November 2015 am Fraunhofer</li>
+          <li>Ein 3D Drucker zum SmartObject machen</li>
+          <li>Ersten Versuch eines Framework Services zu erstellen</li>
+          <li>Ein zweites SmartObject bauen für Automatisierung</li>
+        </ul>
+
+      </div>
+    </div>
+  
+  </div>
+  
+  <div class="sidebar">
+    <ul>
+      <li onclick="location.href='index.html';">Project</li>
+      <li onclick="location.href='bachelor.html';">Bachelor</li>
+      <li onclick="location.href='aboutMe.html';">About Me</li>
+    </ul>
+  </div>
+
+</div>
+  
+
 </body>
 </html>
